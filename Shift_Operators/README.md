@@ -16,7 +16,7 @@ Let’s explore an example where we have a value where we wish to shift 3 bit po
 var temp
 temp = 13 << 3
 ```
-And what is happening underneath the code when we execute the above is:
+The variable temp has a value of 104.  Let us explore what is happening underneath the hood when we execute the code above.
 ```
 13 —> Decimal Format in base 10
 ```

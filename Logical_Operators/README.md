@@ -24,6 +24,7 @@ Try implementing now a solution in code with the quesitons below.
 >Q:  Given that the rightmost bit is also called the ‘least significant bit’, write a function that takes in an integer value and checks to see if it is even or odd using bit-wise operations.
 
 >Q:  Why would using bit-wise operations be potentially faster for checking even and odds as oppose to using something like a modular operator? eg. (randInt % 2)
+>
 _____________________
 ### OR Operator: |
 
@@ -40,6 +41,7 @@ The resultant bit value is computed whenever either bits are set to ones.  Hence
 Try implementing now a solution in code with the quesiton below.
 
 >Q:  Write a function that takes in a two integer values and prints out the resultant value when you ADD the two input values and then also when you OR the two input values.
+>
 _____________________
 
 [3] ^ [XOR Operator]

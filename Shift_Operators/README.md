@@ -57,28 +57,49 @@ Try implementing now a solution in code with the questions below:
 
 When you have completed, push the questions/solutions into a folder named 'Left Shift Operator' in your GitHub repo.
 _____________________
+### Right Shift Operator:  >>
 
-[2] >> [Right Shift Operator]
 Similar to the Left Shift operator, this operation on a number will shift the base 2 value a specified number of bits to the right now.  If we have X >>Y ; then the Y will represent the number of bits we will shift on the X base 2 value.  The rule is that any excess bits shifted off to the right most side will trail off and be discarded.  Then zero bits are shifted in from the left hand side but the difference from the Left Shift operator is that the ‘sign bit’ value, leftmost bit, is kept after the right shifts.  This way, the sign propagates and is kept after bit shift right.
 
-Let’s explore an example where we have a value where we wish to shift 3 bit positions but now we will shift right.  What that looks like in code is:
-     13 >> 3
-And what is happening underneath the code when we execute is:
-
+Let’s explore an example where we have a value where we wish to shift 3 bit positions but now we will shift right instead of left.  What that looks like in code is:
+```js
+var temp
+temp = 13 >> 3
+```
+And what is happening underneath the code when we execute the above is:
+```
 13 —> Decimal Format in base 10
-
+```
+Again, the 13 is first turned into:
+```
 00000000 00000000 00000000 00001101  —> Binary Format in base 2 of 13
-
+```
+Operating now on the binary format of 13, we can now do bit shifting to the right:
+```
 13 >> 3 —> in base 10
-
-00000000 00000000 00000000 00001101 >> 3 bit positions
+```
+Below, we will take the base 2 format of 13 and shift 3 bits right
+```
+00000000 00000000 00000000 00001101 >> 3 -> 13 in binary in order to shift 3 bit positions right
+```
+The final value in base 2 would be:
+```
 00000000 00000000 00000000 01101000 —> After shifting 3 positions right on the decimal value of 13
+```
+Converting the above value of the Binary Format (base 2) from what we got after bit-shifting 3 positions right, the table below shows the converted value in base 10:
 
-Converting the above value of the Binary Format (base 2) of what we got after bit-shifting 3 positions right:
+| Format | Value | 
+|---------------------------|-----|
+| Base 2:                  | 00000000 00000000 00000000 01101000 |
+| Base 10:                  | 104  |
 
-00000000 00000000 00000000 01101000 (base 2) = X (base 10)
+You can see now that is why the right shift operator is often also called the *sign-propagating right shift operator* as the sign of the number is always preserved.
 
-You can see now that is why the right shift operator is often also called the sign-propagating right shift operator as the sign of the number is preserved.
+Try implementing now a solution in code with the questions below:
+>Q:  Extend the function above by providing logic that takes in a value in base 10 and a value that represents the number of bit positions to shift right with.  Print out the final base 10 values after the two different shif operators.
+
+When you have completed, push the questions/solutions into a folder named 'Right Shift Operator' in your GitHub repo.
+_____________________
 
 [3] >>> [Zero-Fill Right Shift Operator]
 Similar to the Right Shift Operator now, the zero-fill right shift operator differs by discarding the sign bit value at the end.  This is where zero bits are shifted in from the left while excess bits are discarded when shifting to the right.  By this nature, the leftmost bit will always be zero after the zero-fill right shift operation is complete and therefore the result is always non-negative.

@@ -82,3 +82,5 @@ Try implementing now a solution in code with the question below.
 >Q:  Write a function that takes in an integer value and prints out its complement base 2 value?
 
 >Q:  What is missing in your function to produce the resulting value in base 10?
+
+When you have completed, push the questions/solutions into a folder named 'NOT Operator' in your GitHub repo.

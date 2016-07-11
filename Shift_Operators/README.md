@@ -25,7 +25,9 @@ The 13 is turned into:
 00000000 00000000 00000000 00001101  —> Binary Format in base 2 of 13
 ```
 Operating now on the binary format of 13, we can now do bit shifting of:
->13 << 3 —> in base 10
+```
+13 << 3 —> in base 10
+```
 Below, we will take the base 2 format of 13 and shifting 3 bits left
 ```
 00000000 00000000 00000000 00001101 << 3 -> 13 in binary to shift 3 bit positions left

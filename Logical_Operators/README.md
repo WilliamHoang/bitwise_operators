@@ -25,24 +25,22 @@ Try implementing now a solution in code with the quesitons below.
 
 >Q:  Why would using bit-wise operations be potentially faster for checking even and odds as oppose to using something like a modular operator? eg. (randInt % 2)
 _____________________
+### OR Operator: |
 
+Now you have knowledge about how the AND operator works, we will explore the | OR operator where instead of having both bits to be 1 (one), the OR operator will have the resultant bit value set to 1 (one) as long as we have one bit set to 1 (one).  So the | operator compares each base 2 binary digit from two integers with the rule of:
 
-[2] | [OR Operator]
-Explain & Examples
+| Truth Table: OR Operator | Ex1 | Ex2 | Ex3 | Ex4 |
+|---------------------------|-----|-----|-----|-----|
+| Value A:                  | 0   | 0   | 1   | 1   |
+| Value B:                  | 0   | 1   | 0   | 1   |
+| Resultant Value:  A\|B   | 0   | 1   | 1   | 1   |
 
-Now you have knowledge about the AND operator, we will explore the | OR operator where instead of having both bits to be 1 (one), now with the OR operator as long as we have one bit set to 1 (one) then we will yield a 1 (one).  So the | operator compares each base 2 binary digit of two integers with the rule of:
+The resultant bit value is computed whenever either bits are set to ones.  Hence with A|B from Ex2 of 0 OR 1, Ex3 of 1 OR 0, Ex4 of 1 OR 1 would all produce a ‘one’ in the resultant bit.
 
-[0][0][1][1]
-[0][1][0][1]
-________
-[0][1][1][1]
+Try implementing now a solution in code with the quesiton below.
 
-The resultant value is computed whenever either bits are ones.  Hence 1 OR 0, 1 OR 1, 0 OR 1 would produce a ‘one’
-
-Try implementing now a solution in code.
-Q:
-
-Q:
+>Q:  Write a function that takes in a two integer values and prints out the resultant value when you ADD the two input values and then also when you OR the two input values.
+_____________________
 
 [3] ^ [XOR Operator]
 Explain & Examples

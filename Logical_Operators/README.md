@@ -1,6 +1,6 @@
 # Bitwise Logical Operators
 
-We will explore 4 operators relating to combining values in their binary base 2 formats together.  These are similar to boolean operators and can be referenced in code.  The 4 ooperators:
+We will explore 4 operators relating to combining values in their binary base 2 formats together.  These are similar to boolean operators and can be referenced in code.  The 4 operators:
 
   - And Operator:  &
   - OR Operator:  |

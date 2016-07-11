@@ -1,32 +1,58 @@
-Bitwise Shift Operators
-The shift operators is related to having two operands where the first operand is the number to be modified and the second operand is the number of bit positions to shift the first operand, number, with.
+# Bitwise Shift Operators
+The shift operators is related to having two operands where the first operand is the number to be modified and the second operand is the number of bit positions to shift the first operand, or number, with.  With the shift operations we will explore 3 operators:  
 
-[1] << [Left Shift Operator]
-This operation on a number will shift the base 2 value a specified number of bits to the left.  If we have X << Y ; then the Y will represent the number of bits we will shift on the X base 2 value.  The rule is that any excess bits shifted off to the left most side will be discarded, while we will have zero bits shifted in from the right hand side.
+  - Left Shift Operator:  <<
+  - Right Shift Operator:  >>
+  - Zero-Fill Right Shift Operator:  >>>
+
+Let's take a look at each of these shift operators and how to calculate the results.
+_____________________
+### Left Shift Operator:  <<
+This operation on a number will shift the base 2 value a specified number of bits to the left.  If we have X << Y ; then the Y will represent the number of bits we will shift on the X represented in   base 2 value.  The rule is that any excess bits shifted off to the left most side will be discarded, while we will have zero bits shifted in from the right hand side.
 
 Let’s explore an example where we have a value where we wish to shift 3 bit positions.  What that looks like in code is:
-     13 << 3
-And what is happening underneath the code when we execute is:
 
+```js
+var temp
+temp = 13 << 3
+```
+And what is happening underneath the code when we execute the above is:
+```
 13 —> Decimal Format in base 10
-
+```
+The 13 is turned into:
+```
 00000000 00000000 00000000 00001101  —> Binary Format in base 2 of 13
+```
+Operating now on the binary format of 13, we can now do bit shifting of:
+>13 << 3 —> in base 10
+```
+00000000 00000000 00000000 00001101 << 3 -> 13 in binary to shift 3 bit positions left
+```
+```
+00000000 00000000 00000000 01101000 —> After shifting 3 bit positions left
+```
 
-13 << 3 —> in base 10
+Converting the above value of the Binary Format (base 2) in what we got after bit-shifting 3 positions left, the table below shows the converted value in base 10:
 
-00000000 00000000 00000000 00001101 << 3 bit positions
-00000000 00000000 00000000 01101000 —> After shifting 3 positions left on the decimal value of 13
-
-Converting the above value of the Binary Format (base 2) of what we got after bit-shifting 3 positions left:
-
-00000000 00000000 00000000 01101000 (base 2) = X (base 10)
+| Format | Value | 
+|---------------------------|-----|
+| Base 2:                  | 00000000 00000000 00000000 01101000 |
+| Base 10:                  | 104  |
 
 The equation to follow or double check is where bit-shifting any number X to the left by Y bits will produce an end value in base 10 of:
 
-x*2^y
+> x*2^y
 
-Try implementing now this solution in code.
-Q:  Write a function that takes in a value in base 10 and a value that represents the number of bit positions to shift left with.  Return or print out the final base 10 value after the shift.
+For the example in our case, this would be for x=13, y=3 giving us the exact binary value that is converted from the table above, **104**.  Using the equation we would get 13*(2^3) = **104** which is the same as the converted binary.
+
+Try implementing now a solution in code with the questions below:
+>Q:  Write a function that takes in a value in base 10 and a value that represents the number of bit positions to shift left with.  Return or print out the final base 10 value after the shift.
+
+>Q:  How would you verify if the above function is producing the correct value?
+
+When you have completed, push the questions/solutions into a folder named 'Left Shift Operator' in your GitHub repo.
+_____________________
 
 [2] >> [Right Shift Operator]
 Similar to the Left Shift operator, this operation on a number will shift the base 2 value a specified number of bits to the right now.  If we have X >>Y ; then the Y will represent the number of bits we will shift on the X base 2 value.  The rule is that any excess bits shifted off to the right most side will trail off and be discarded.  Then zero bits are shifted in from the left hand side but the difference from the Left Shift operator is that the ‘sign bit’ value, leftmost bit, is kept after the right shifts.  This way, the sign propagates and is kept after bit shift right.

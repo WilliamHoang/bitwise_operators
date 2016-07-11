@@ -26,21 +26,23 @@ The 13 is turned into:
 ```
 Operating now on the binary format of 13, we can now do bit shifting of:
 >13 << 3 —> in base 10
+Below, we will take the base 2 format of 13 and shifting 3 bits left
 ```
 00000000 00000000 00000000 00001101 << 3 -> 13 in binary to shift 3 bit positions left
 ```
+The final value in base 2 would be:
 ```
 00000000 00000000 00000000 01101000 —> After shifting 3 bit positions left
 ```
 
-Converting the above value of the Binary Format (base 2) in what we got after bit-shifting 3 positions left, the table below shows the converted value in base 10:
+Converting the above value of the Binary Format (base 2) from what we got after bit-shifting 3 positions left, the table below shows the converted value in base 10:
 
 | Format | Value | 
 |---------------------------|-----|
 | Base 2:                  | 00000000 00000000 00000000 01101000 |
 | Base 10:                  | 104  |
 
-The equation to follow or double check is where bit-shifting any number X to the left by Y bits will produce an end value in base 10 of:
+The mathematical equation to follow is where bit-shifting any number X to the left by Y bits will produce an end value in base 10 of:
 
 > x*2^y
 

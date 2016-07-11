@@ -20,7 +20,7 @@ The & operator compares each base 2 binary digit from two integers with the rule
 
 With the AND operator, the resultant value is computed whenever both bits are ones.  Hence in the Ex4 column when 1 AND 1, where A&B, would produce a corresponding *1*.  Any other combination will produce a *0* as shown in Ex1, Ex2, Ex3.  The above is called a ‘Truth Table’ and will be used throughout to demonstrate the outcome of the operators.
 
-Try implementing now a solution in code with the quesitons below.
+Try implementing now a solution in code with the questions below.
 
 >Q:  Given that the rightmost bit is also called the ‘least significant bit’, write a function that takes in an integer value and checks to see if it is even or odd using bit-wise operations.
 
@@ -40,30 +40,31 @@ Now you have knowledge about how the AND operator works, we will explore the | O
 
 The resultant bit value is computed whenever either bits are set to ones.  Hence with A|B from Ex2 of 0 OR 1, Ex3 of 1 OR 0, Ex4 of 1 OR 1 would all produce a ‘one’ in the resultant bit.
 
-Try implementing now a solution in code with the quesiton below.
+Try implementing now a solution in code with the question below.
 
 >Q:  Write a function that takes in a two integer values and prints out the resultant value when you ADD the two input values and then also when you OR the two input values.
 
 When you have completed, push the questions/solutions into a folder named 'OR Operator' in your GitHub repo.
 _____________________
+### XOR Operator: ^
 
-[3] ^ [XOR Operator]
-Explain & Examples
+Extending the concepts further, XOR (pronounced ‘X’ ‘OR’) produces (ONE) 1 in the truth table when both bits are different.  That is when either one of the bits is a (one) 1 and the other is a (zero) 0.
+The ^ operator compares each base 2 binary digit of two integers with the rule of:
 
-Extending the concepts further, the XOR (pronounced ‘X’ ‘OR’) produces (ONE) 1 in the truth table when both bits are different.  That is when either one of the bits is a (one) 1 and the other is a (zero) 0.
-So the ^ operator compares each base 2 binary digit of two integers with the rule of:
+| Truth Table: XOR Operator | Ex1 | Ex2 | Ex3 | Ex4 |
+|---------------------------|-----|-----|-----|-----|
+| Value A:                  | 0   | 0   | 1   | 1   |
+| Value B:                  | 0   | 1   | 0   | 1   |
+| Resultant Value:  A^B   | 0   | 1   | 1   | 0   |
 
-[0][0][1][1]
-[0][1][0][1]
-________
-[0][1][1][0]
+The resultant bit value is computed when exclusively one of the A,B  bits are ones.  Hence with A^B operation from Ex2 of 0 OR 1, Ex3 of 1 OR 0 would both produce a ‘one’ in the resultant bit.  While Ex1 and Ex4 both would produce a 'zero' as the bit values between A^B do not exclusively contain '1'.
 
-The resultant value is computed when exclusively one of the bits are ones.  Hence 1 XOR 0, 0 XOR 1 would produce a ‘one’
+Try implementing now a solution in code with the question below.
 
-Try implementing now a solution in code.
-Q:
+>Q:  Extend the previous function further by adding logic for the XOR operation when two integer values are inputted along with a 2nd parameter that would denote for the type of operation to execute.  Print out the resultant value for the associated operation type.
 
-Q:
+When you have completed, push the questions/solutions into a folder named 'XOR Operator' in your GitHub repo.
+_____________________
 
 [4] ~ [NOT Operator]
 Explain & Examples

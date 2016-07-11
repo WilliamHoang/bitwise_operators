@@ -21,10 +21,12 @@ The & operator compares each base 2 binary digit from two integers with the rule
 With the AND operator, the resultant value is computed whenever both bits are ones.  Hence in the Ex4 column when 1 AND 1, where A&B, would produce a corresponding *1*.  Any other combination will produce a *0* as shown in Ex1, Ex2, Ex3.  The above is called a ‘Truth Table’ and will be used throughout to demonstrate the outcome of the operators.
 
 Try implementing now a solution in code with the quesitons below.
+
 >Q:  Given that the rightmost bit is also called the ‘least significant bit’, write a function that takes in an integer value and checks to see if it is even or odd using bit-wise operations.
 
 >Q:  Why would using bit-wise operations be potentially faster for checking even and odds as oppose to using something like a modular operator? eg. (randInt % 2)
->
+
+When you have completed, push the questions/solutions into a folder named 'AND Operator' in your GitHub repo.
 _____________________
 ### OR Operator: |
 
@@ -41,7 +43,8 @@ The resultant bit value is computed whenever either bits are set to ones.  Hence
 Try implementing now a solution in code with the quesiton below.
 
 >Q:  Write a function that takes in a two integer values and prints out the resultant value when you ADD the two input values and then also when you OR the two input values.
->
+
+When you have completed, push the questions/solutions into a folder named 'OR Operator' in your GitHub repo.
 _____________________
 
 [3] ^ [XOR Operator]

@@ -100,18 +100,22 @@ Try implementing now a solution in code with the questions below:
 
 When you have completed, push the questions/solutions into a folder named 'Right Shift Operator' in your GitHub repo.
 _____________________
+### Zero-Fill Right Shift Operator:  >>>
 
-[3] >>> [Zero-Fill Right Shift Operator]
-Similar to the Right Shift Operator now, the zero-fill right shift operator differs by discarding the sign bit value at the end.  This is where zero bits are shifted in from the left while excess bits are discarded when shifting to the right.  By this nature, the leftmost bit will always be zero after the zero-fill right shift operation is complete and therefore the result is always non-negative.
+Similar to the Right Shift Operator now, the zero-fill right shift operator differs by discarding the sign bit value at the end as oppose to keeping it.  This is where zero bits are shifted in from the left while excess bits are discarded when shifting to the right.  By this nature, the leftmost bit will always be zero after the zero-fill right shift operation is complete and therefore the result is always non-negative.
 
 Now if we have X >>>Y ; then the Y will represent the number of bits we will shift on the X base 2 value.  The rule is that any excess bits shifted off to the right most side will trail off and be discarded while zero bits are shifted in from the left hand side.
 
 Let’s explore an example where we have a negative value where we wish to shift 5 bit positions to the right.  What that looks like in code is:
-     -17 >>> 5
-And what is happening underneath the code when we execute is:
 
+```js
+var temp
+temp = -17 >>>5
+```
+And what is happening underneath the code when we execute the above is:
+```
 -17 —> Decimal Format in base 10
-
+```
 [1]We first take the positive value of the number
 00000000 00000000 00000000 00010001  —> Binary Format in base 2 of 17
 
@@ -122,16 +126,28 @@ And what is happening underneath the code when we execute is:
 
 Remember why we do the two’s complement by adding one as the final step?  By adding one, positive numbers will have the left most bit set to 0 and negative numbers will have the left most bit set to 1.
 
--17 >> 5 —> in base 10
+```
+-17 >>> 5 —> in base 10
+```
+Below, we will take the base 2 format of 17 and shifting 5 bits right
+```
+11111111 11111111 11111111 11101111 >>> 5 -> 17 in binary to shift 5 bit positions right
+```
+The final value in base 2 would be:
+```
+00000111  11111111 11111111 11111111  —> After shifting 5 bit positions right on the decimal value of -17
+```
 
-11111111 11111111 11111111 11101111 >> 5 bit positions
-00000111  11111111 11111111 11111111  —> After shifting 5 positions right on the decimal value of -17
+Converting the above value of the Binary Format (base 2) from what we got after bit-shifting 5 positions right, the table below shows the converted value in base 10:
 
-Converting the above value of the Binary Format (base 2) of what we got after bit-shifting 5 positions right:
+| Format | Value | 
+|---------------------------|-----|
+| Base 2:                  | 00000111  11111111 11111111 11111111 |
+| Base 10:                  | 104  |
 
-00000111  11111111 11111111 11111111 (base 2) = X (base 10)  (wrong)
+Try implementing now a solution in code with the questions below:
+>Q:  Modify the above function that takes in a value in base 10 and a value that represents the number of bit positions to shift with.  Add in additional logic that would print out the final base 10 value after executing the 3 different shift operators.
 
-Try implementing now this solution in code.
-Q:  Modify the above function that takes in a value in base 10 and a value that represents the number of bit positions to shift with.  Add in additional logic that would print out the final base 10 value after executing the 3 different shift operators.
+>Q:  For non-negative numbers, does the Zero-Fill Right Shift Operator differ from the Right Shift Operator in terms of producing the end result?  Why or Why not?   Eg.  11 >>> 4 vs 11>>4
 
-Q:  For non-negative numbers, does the Zero-Fill Right Shift Operator differ from the Right Shift Operator in terms of producing the end result?  Why or Why not?   Eg.  11 >>> 4 vs 11>>4
+When you have completed, push the questions/solutions into a folder named 'Zero-Fill Right Shift Operator' in your GitHub repo.

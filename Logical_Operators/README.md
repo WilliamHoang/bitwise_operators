@@ -1,24 +1,31 @@
-Bitwise Logical Operators
+# Bitwise Logical Operators
 
-Four operators relating to combining values in their binary base 2 formats together.  These are similar to boolean operators and can be referenced in code.
+We will explore 4 operators relating to combining values in their binary base 2 formats together.  These are similar to boolean operators and can be referenced in code.  The 4 ooperators:
 
-[1] & [And Operator]
-Explain & Examples
-The & operator compares each base 2 binary digit of two integers with the rule of:
+  - And Operator:  &
+  - OR Operator:  |
+  - XOR Operator:  ^
+  - NOT Operator:  ~
 
-[0][0][1][1]
-[0][1][0][1]
-________
-[0][0][0][1]
+Let us explore each of these operators in more details now.
+_____________________
+### AND Operator: &
+The & operator compares each base 2 binary digit from two integers with the rule of:
 
-The resultant value is computed whenever both bits are ones.  Hence 1 AND 1 would produce a ‘one’  Any other combination will produce a ‘zero’  The above is called a ‘Truth Table’ and will be used throughout.
+| Truth Table: AND Operator | Ex1 | Ex2 | Ex3 | Ex4 |
+|---------------------------|-----|-----|-----|-----|
+| Value A:                  | 0   | 0   | 1   | 1   |
+| Value B:                  | 0   | 1   | 0   | 1   |
+| Resultant Value:  A&B     | 0   | 0   | 0   | 1   |
 
-Try implementing now a solution in code.
-Q:  Given that the rightmost bit is also called the ‘least significant bit’, write a function that takes in an integer value and checks to see if it is even or odd using bit-wise operations.
-*rightmost bit is represented as 2^0 or 1 therefore when right most bit is 1 the number is odd.
-*if(randInt & 1) == odd
+With the AND operator, the resultant value is computed whenever both bits are ones.  Hence in the Ex4 column when 1 AND 1, where A&B, would produce a corresponding *1*.  Any other combination will produce a *0* as shown in Ex1, Ex2, Ex3.  The above is called a ‘Truth Table’ and will be used throughout to demonstrate the outcome of the operators.
 
-Q:  Why would using bit-wise operations be potentially faster for checking even and odds as oppose to using something like randInt % 2?
+Try implementing now a solution in code with the quesitons below.
+>Q:  Given that the rightmost bit is also called the ‘least significant bit’, write a function that takes in an integer value and checks to see if it is even or odd using bit-wise operations.
+
+>Q:  Why would using bit-wise operations be potentially faster for checking even and odds as oppose to using something like a modular operator? eg. (randInt % 2)
+_____________________
+
 
 [2] | [OR Operator]
 Explain & Examples

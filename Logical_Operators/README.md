@@ -65,21 +65,20 @@ Try implementing now a solution in code with the question below.
 
 When you have completed, push the questions/solutions into a folder named 'XOR Operator' in your GitHub repo.
 _____________________
+### NOT Operator: ~
 
-[4] ~ [NOT Operator]
-Explain & Examples
+Finally, the NOT operator is the simplest of the operations involving base 2 binary values.
 
-Finally the NOT operator is the simplest of the operations involving base 2 binary values.
 The ~ operator operates on only a single bit and provides the complement value.  The truth table for the ~ NOT operator has the rule of:
 
-Input:    [0][1]
-______   ____
-Output: [1][0]
+| Truth Table: NOT Operator | Ex1 | Ex2 |
+|---------------------------|-----|-----|
+| Value A:                  | 0   | 1   |
+| Resultant Value:  A~      | 1   | 0   |
 
-In the boolean sense, this is the ! operator where the value is flipped.  The operation reverses the current bit where the resultant value is computed by turning:  1 to 0, 0 to 1
+In the boolean sense, this is the ! operator where the value of the bit is flipped.  The operation reverses the current bit where the resultant value is computed by turning 0 to 1 in Ex1 and 1 to 0 in Ex2.   
 
-Try implementing now a solution in code.
-Q:
-Write a function that takes in an integer value and prints out its complement base 2 value?
-Q:
-What is missing in your function to produce the resulting value in base 10?
+Try implementing now a solution in code with the question below.
+>Q:  Write a function that takes in an integer value and prints out its complement base 2 value?
+
+>Q:  What is missing in your function to produce the resulting value in base 10?

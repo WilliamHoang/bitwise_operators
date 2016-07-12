@@ -27,7 +27,7 @@ Let's follow the steps outlined above to convert now.
 | Format | Value | 
 |---------------------------|-----|
 | Base 2:  One's Complement                  |11111111 11111111 11111101 11111101|
-| Two’s Complement of 514 in Binary Format:                  | 11111111 11111111 11111101 xxxxxxxxx|    
+| Two’s Complement of 514 in Binary Format:                  | 00000000 00000000 00000010 00000010|    
 
 Why you may ask we do the two’s complement by adding one as the final step?  By adding one, positive numbers will have the left most bit set to 0 and negative numbers will have the left most bit set to 1.
 

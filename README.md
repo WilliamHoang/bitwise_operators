@@ -1,3 +1,6 @@
+# bitwise_operators
+
+
 # Binary Digits
 In this unit, we will explore binary digits and learn how to use the various operations available on the bits through code.  The areas of focus will be   
 

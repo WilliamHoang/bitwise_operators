@@ -1,8 +1,8 @@
 ### Two’s Complement:
 Two’s Complement is a technique for composing the negative version of a number from it’s positive binary form.  The way to convert is to:
 
-  -[Step 1] First invert all the current bits of a number
-  -[Step 2] Add one to the very end of the invert bits
+  - [Step 1] First invert all the current bits of a number
+  - [Step 2] Add one to the very end of the invert bits
 
 Let’s see an example below that goes through the sequence of converting a number from human readable form into it’s negative binary counter part.
 
@@ -14,6 +14,7 @@ Let’s see an example below that goes through the sequence of converting a numb
 Let's follow the steps outlined above to convert now.
 
  - [Step 1] First invert all the current bits of a number:
+
 *In this step we will toggle all the bits from a '0' to a '1' and all the bits from a '1' to a '0'.  We call this the *One's Complement* of a binary number once we have toggled all bits.
 
 | Format | Value | 
@@ -22,6 +23,7 @@ Let's follow the steps outlined above to convert now.
 | One’s Complement of 514 in Binary Format:| 11111111 11111111 11111101 11111101|  
   
  - [Step 2] Add one to the very end of the invert bits:
+
 *In this second step we will add a single bit to the very end of the One's Complement.  The result is called the *Two's Complement* of a number. 
   
 | Format | Value | 

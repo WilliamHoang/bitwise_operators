@@ -15,7 +15,7 @@ Let's follow the steps outlined above to convert now.
 
  - [Step 1] First invert all the current bits of a number:
 
-*In this step we will toggle all the bits from a '0' to a '1' and all the bits from a '1' to a '0'.  We call this the 'One's Complement' of a binary number once we have toggled all bits.
+* In this step we will toggle all the bits from a '0' to a '1' and all the bits from a '1' to a '0'.  We call this the 'One's Complement' of a binary number once we have toggled all bits.
 
 | Format | Value | 
 |---------------------------|-----|
@@ -24,7 +24,7 @@ Let's follow the steps outlined above to convert now.
   
  - [Step 2] Add one to the very end of the invert bits:
 
-*In this second step we will add a single bit to the very end of the One's Complement.  The result is called the 'Two's Complement' of a number. 
+* In this second step we will add a single bit to the very end of the One's Complement.  The result is called the 'Two's Complement' of a number. 
   
 | Format | Value | 
 |---------------------------|-----|

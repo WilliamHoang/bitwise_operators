@@ -81,3 +81,15 @@ Let us explore further on how this is computed now with the equation below:
 
  -      digital value = [bit value at position x]*2^(bit position x) + [bit value at position x+1]*2^(bit position x+1) ... + [bit value at position n]*2^(bit position n)
  
+The above equation is looking at each bit value and multiplying it by 2 to the exponent on the integer value that represents the position of the bit.  Let us use an example to illustrate this further:
+ - 8-bits - 5 (base 10)
+ -      [0][0][0][0][0][1][0][1]
+
+How is it that the number 5 is described to be as:  **00000101** in binary? 
+This is calculated with the above equation by:
+
+[1]*2^(0) + [0]*2^[1] + [1]*2^[2] + [0]*2^[3] + [0]*2^[4] + [0]*2^[5] + [0]*2^[6] + [0]*2^[7] = 5 (base 10)
+
+The digit in front that we are multiplying with is referencing the binary digits of *00000101* starting from the right hand side.  The right most bit is called the *least significant bit* and we will go over why that is the case later on.  The value in the circular brackets represent the position of the binary digits starting with position (0).  If you sum up the entire binary digits, you will obtain the numerical 5. 
+
+

@@ -4,9 +4,9 @@
 # Binary Digits
 In this unit, we will explore binary digits and learn how to use the various operations available on the bits through code.  The areas of focus will be   
 
-  - Logical Operators   
-  - Two's Complement
-  - Shift Operators
+  - [Logical Operators]   
+  - [Two's Complement]
+  - [Shift Operators]
 
 But before we begin, let's explore what are binary digits and their relevance to computer engineering.
 _____________________
@@ -92,4 +92,7 @@ This is calculated with the above equation by:
 
 The digit in front that we are multiplying with is referencing the binary digits of *00000101* starting from the right hand side.  The right most bit is called the *least significant bit* and we will go over why that is the case later on.  The value in the circular brackets represent the position of the binary digits starting with position (0).  If you sum up the entire binary digits, you will obtain the numerical 5. 
 
+[Logical Operators]: <https://github.com/WilliamHoang/bitwise_operators/tree/master/Logical_Operators>
+[Two's Complement]:  <https://github.com/WilliamHoang/bitwise_operators/tree/master/Twos_Complement>
+[Shift Operators]:<https://github.com/WilliamHoang/bitwise_operators/tree/master/Shift_Operators>
 
